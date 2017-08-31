@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>谭上林的博客</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-08-30T07:28:14.958Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>谭上林</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>工汇通技术方案</title>
+    <link href="http://yoursite.com/2017/08/30/%E5%B7%A5%E6%B1%87%E9%80%9A%E6%8A%80%E6%9C%AF%E6%96%B9%E6%A1%88/"/>
+    <id>http://yoursite.com/2017/08/30/工汇通技术方案/</id>
+    <published>2017-08-30T07:48:21.000Z</published>
+    <updated>2017-08-30T07:28:14.958Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="工汇通技术方案"><a href="#工汇通技术方案" class="headerlink" title="工汇通技术方案"></a>工汇通技术方案</h1><h2 id="第1章-目录"><a href="#第1章-目录" class="headerlink" title="第1章   目录"></a>第1章   目录</h2><p>[TOC]</p>
+<h2 id="第2章-概述"><a href="#第2章-概述" class="headerlink" title="第2章 概述"></a>第2章 概述</h2><h3 id="2-1-概述"><a href="#2-1-概述" class="headerlink" title="2.1  概述"></a>2.1  概述</h3><p>工汇通系统是针对务工者全过程的管理系统，帮助建设单位对务工者进行有效的管理和及时跟踪务工者的具体情况，打通了业主单位跟务工者之间的桥梁。</p>
+<h3 id="2-2-项目背景"><a href="#2-2-项目背景" class="headerlink" title="2.2  项目背景"></a>2.2  项目背景</h3><p>我国农民工工资拖欠问题一直存在，特别是建设领域用工管理和工资支付行为不规范，导致务工者工资拖欠问题尤为严重。目前，国务院办公厅印发《关于全面治理拖欠务工者工资问题的意见》，就健全预防和解决拖欠务工者工资问题的长效机制，从根本上治理拖欠务工者工资问题提出了明确要求。</p>
+<h3 id="2-3-建设目标"><a href="#2-3-建设目标" class="headerlink" title="2.3  建设目标"></a>2.3  建设目标</h3><p>建立完善的务工者管理体系，建立个人档案，对务工者的进场、培训、发放工资、离场、信用评价等全生命周期进行有效的跟踪记录和实时反馈。</p>
+<h2 id="第3章-需求分析"><a href="#第3章-需求分析" class="headerlink" title="第3章   需求分析"></a>第3章   需求分析</h2><h3 id="3-1-模块需求"><a href="#3-1-模块需求" class="headerlink" title="3.1  模块需求"></a>3.1  模块需求</h3><p>建立工队及务工者进场、培训、工资发放、信用评价等模块。</p>
+<h3 id="3-2-接口需求"><a href="#3-2-接口需求" class="headerlink" title="3.2 接口需求"></a>3.2 接口需求</h3><p>开发适用于钉钉端、安卓端、IOS端的数据接口，包括汇总统计，数据分析，各大模块数据列表等。</p>
+<h3 id="3-3-性能需求"><a href="#3-3-性能需求" class="headerlink" title="3.3 性能需求"></a>3.3 性能需求</h3><p>适用于大数据高并发，读写分离高效系统。</p>
+<h3 id="3-4安全需求"><a href="#3-4安全需求" class="headerlink" title="3.4安全需求"></a>3.4安全需求</h3><p>服务器安全，网站安全，程序安全，数据资料安全。</p>
+<h2 id="第4章-系统配置"><a href="#第4章-系统配置" class="headerlink" title="第4章   系统配置"></a>第4章   系统配置</h2><h3 id="4-1-服务器"><a href="#4-1-服务器" class="headerlink" title="4.1 服务器"></a>4.1 服务器</h3><p>Windows Server 2008 R2 Standard</p>
+<h3 id="4-2-数据库"><a href="#4-2-数据库" class="headerlink" title="4.2 数据库"></a>4.2 数据库</h3><p>Mysql version 5.7.13</p>
+<h3 id="4-3-软件框架"><a href="#4-3-软件框架" class="headerlink" title="4.3 软件框架"></a>4.3 软件框架</h3><p>ASP.NET MVC 4.5</p>
+<h3 id="4-4-开发工具"><a href="#4-4-开发工具" class="headerlink" title="4.4 开发工具"></a>4.4 开发工具</h3><p>Visual Studio 2013</p>
+<h2 id="第5章-系统架构"><a href="#第5章-系统架构" class="headerlink" title="第5章   系统架构"></a>第5章   系统架构</h2><h3 id="5-1-系统架构图"><a href="#5-1-系统架构图" class="headerlink" title="5.1  系统架构图"></a>5.1  系统架构图</h3><p><img src="https://www.showdoc.cc/home/common/visitfile/sign/e14805ad32501a1d22159e4c83203878?showdoc=.jpg" alt=""><br>工汇通系统采用典型的MVC架构，主要分成应用层、业务层和控制层。根据功能划分为客户端应用、业务层、数据层、基础服务层及系统运行环境。</p>
+<h3 id="5-2-角色功能图"><a href="#5-2-角色功能图" class="headerlink" title="5.2  角色功能图"></a>5.2  角色功能图</h3><p><img src="https://www.showdoc.cc/home/common/visitfile/sign/8c66226ad1063a8cb307e89eddd1607a?showdoc=.jpg" alt=""><br>工汇通系统采用角色功能来分配任务并进行权限控制，利于不同人员的职责和分工明确，提高效率。</p>
+<h3 id="5-3-角色功能图"><a href="#5-3-角色功能图" class="headerlink" title="5.3  角色功能图"></a>5.3  角色功能图</h3><p><img src="https://www.showdoc.cc/home/common/visitfile/sign/88726710198b2ec5f0974b7b957a2581?showdoc=.jpg" alt=""></p>
+<h2 id="第6章-项目实施"><a href="#第6章-项目实施" class="headerlink" title="第6章   项目实施"></a>第6章   项目实施</h2><h3 id="6-1-建立运行管理机制"><a href="#6-1-建立运行管理机制" class="headerlink" title="6.1  建立运行管理机制"></a>6.1  建立运行管理机制</h3><p>由业主单位主推，施工单位实施并对过程跟踪反馈，建立由上而下的一套协同运转机制。</p>
+<h3 id="6-2-人员安排"><a href="#6-2-人员安排" class="headerlink" title="6.2  人员安排"></a>6.2  人员安排</h3><p>业主单位安排专门管理人员，项目部安排专管员，负责数据的收集和录入。</p>
+<h3 id="6-2-系统试运行"><a href="#6-2-系统试运行" class="headerlink" title="6.2  系统试运行"></a>6.2  系统试运行</h3><p>工汇通系统将在佛山地铁2号线一期工程中，对每个施工单位逐步推行试运行，并及时收集反馈意见对系统进行完善更新。</p>
+<h3 id="6-2-评审制度"><a href="#6-2-评审制度" class="headerlink" title="6.2  评审制度"></a>6.2  评审制度</h3><p>业主单位对工汇通推广和运行情况会阶段性进行检查，对运行情况良好的进行表彰，运行较差的进行通报批评。</p>
+<h2 id="第7章-成果展示"><a href="#第7章-成果展示" class="headerlink" title="第7章   成果展示"></a>第7章   成果展示</h2><h3 id="7-1-登录界面"><a href="#7-1-登录界面" class="headerlink" title="7.1  登录界面"></a>7.1  登录界面</h3><p><img src="https://www.showdoc.cc/home/common/visitfile/sign/4af3a63b178ab4401da999bfefef7384?showdoc=.jpg" alt=""></p>
+<h3 id="7-2-主界面"><a href="#7-2-主界面" class="headerlink" title="7.2  主界面"></a>7.2  主界面</h3><p><img src="https://www.showdoc.cc/home/common/visitfile/sign/a6b893cb8584ffda74fc60e8815c1b7c?showdoc=.jpg" alt=""></p>
+<h3 id="7-3-功能业务界面"><a href="#7-3-功能业务界面" class="headerlink" title="7.3  功能业务界面"></a>7.3  功能业务界面</h3><h4 id="7-3-1-档案界面"><a href="#7-3-1-档案界面" class="headerlink" title="7.3.1  档案界面"></a>7.3.1  档案界面</h4><p><img src="https://www.showdoc.cc/home/common/visitfile/sign/e56975a14946957bbf418a02181a3d17?showdoc=.jpg" alt=""></p>
+<h4 id="7-3-2-培训界面"><a href="#7-3-2-培训界面" class="headerlink" title="7.3.2  培训界面"></a>7.3.2  培训界面</h4><p><img src="https://www.showdoc.cc/home/common/visitfile/sign/af1108fac37ae3cf5a634886ab2f03fb?showdoc=.jpg" alt=""></p>
+<h4 id="7-3-3-工资界面"><a href="#7-3-3-工资界面" class="headerlink" title="7.3.3  工资界面"></a>7.3.3  工资界面</h4><p><img src="https://www.showdoc.cc/home/common/visitfile/sign/c96ed5f1e98ba3f2edced427c1dc243d?showdoc=.jpg" alt=""></p>
+<h4 id="7-3-3-统计分析界面"><a href="#7-3-3-统计分析界面" class="headerlink" title="7.3.3  统计分析界面"></a>7.3.3  统计分析界面</h4><p><img src="https://www.showdoc.cc/home/common/visitfile/sign/2f732c25c9bb231c7635817d32001633?showdoc=.jpg" alt=""><br><img src="https://www.showdoc.cc/home/common/visitfile/sign/abb139be9f59e8a129ad2147cdaeac27?showdoc=.jpg" alt=""></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h1 id=&quot;工汇通技术方案&quot;&gt;&lt;a href=&quot;#工汇通技术方案&quot; class=&quot;headerlink&quot; title=&quot;工汇通技术方案&quot;&gt;&lt;/a&gt;工汇通技术方案&lt;/h1&gt;&lt;h2 id=&quot;第1章-目录&quot;&gt;&lt;a href=&quot;#第1章-目录&quot; class=&quot;headerlink&quot; 
+    
+    </summary>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>TSL</title>
+    <link href="http://yoursite.com/2017/08/30/TSL/"/>
+    <id>http://yoursite.com/2017/08/30/TSL/</id>
+    <published>2017-08-30T06:48:21.000Z</published>
+    <updated>2017-08-30T15:52:08.744Z</updated>
+    
+    <summary type="html">
+    
+    </summary>
+    
+    
+      <category term="标签1" scheme="http://yoursite.com/tags/%E6%A0%87%E7%AD%BE1/"/>
+    
+      <category term="标签2" scheme="http://yoursite.com/tags/%E6%A0%87%E7%AD%BE2/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2017/08/30/hello-world/"/>
+    <id>http://yoursite.com/2017/08/30/hello-world/</id>
+    <published>2017-08-30T06:33:35.071Z</published>
+    <updated>2017-08-30T06:33:35.071Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
